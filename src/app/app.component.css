@@ -1,0 +1,17 @@
+.main, .footer{
+  padding-top: 48px;
+  padding-bottom: 48px;
+  margin-bottom: 30px;
+}
+
+.footer{
+  background-color: #eee;
+  margin-bottom: 0px;
+}
+
+.footer .row{
+  margin-bottom: 30px;
+}
+.footer .row:last{
+  margin-bottom: 0px;
+}

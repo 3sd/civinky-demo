@@ -5,16 +5,20 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { CivinkyService } from './civinky.service';
+import { CivinkyComponent } from './civinky/civinky.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CivinkyComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [CivinkyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
