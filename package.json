@@ -1,5 +1,5 @@
 {
-  "name": "Civinky Demo",
+  "name": "civinky-demo",
   "description": "Demo of Civinky: a web service that converts a Pug template, writen with Inky tags to html ready for CiviMail",
   "repository": "3sd/civinky-demo",
   "version": "0.0.0",
