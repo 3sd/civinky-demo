@@ -8,7 +8,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class CivinkyService {
 
-  url ="http://localhost:3000/generate"
+  url ="https://civinky.3sd.io/generate"
 
   constructor(private http: Http) { }
 
