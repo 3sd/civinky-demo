@@ -17,7 +17,7 @@ export class CivinkyService {
     params.set('pug', pug)
     params.set('css', css)
     params.set('json', json)
-    return this.http.get(this.url, {search: params})
+    return this.http.post(this.url, {search: params})
       .map(res => {return {url:res.url,html:res.text().trim()}})
   }
 }
