@@ -17,8 +17,6 @@ export class CivinkyComponent implements OnInit {
 
   url: SafeResourceUrl
 
-  urlString: string
-
   html: string
 
   pug: string = `container
@@ -76,7 +74,6 @@ export class CivinkyComponent implements OnInit {
   }
 
   queryCivinky() {
-    this.urlString = encodeURI(this.civinky.url + '?pug=' + this.pug + '&css=' + this.css + '&json=' + this.json)
     this.civinky.query(this.pug, this.css, this.json).subscribe(
       result => {
         this.html = result.html
