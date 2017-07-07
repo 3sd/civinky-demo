@@ -1,3 +1,3 @@
 # Civinky demonstration site
 
-See [README.anguar.md](README.anguar.md) for more details.
+The [Civinky demonstration site](https://civinky.demo.3sd.io/) helps you explore what is possible with Civinky.
