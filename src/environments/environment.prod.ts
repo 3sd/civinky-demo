@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  civinkyUrl: 'http://civinky.3sd.io/generate'
 };
