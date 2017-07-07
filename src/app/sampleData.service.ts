@@ -39,7 +39,7 @@ export class SampleDataService {
   css: string = `.footer p {font-size: 80%; color: grey}
 .footer a {color: grey}`
 
-  snippet: boolean = true
+  snippet: boolean = false
 
   json: string = JSON.stringify({
     "articles": [

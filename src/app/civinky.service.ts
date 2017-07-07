@@ -13,12 +13,12 @@ export class CivinkyService {
 
   constructor(private http: Http, private elementRef: ElementRef) { }
 
-  query(pug, css, json) {
+  query(pug, css, json, snippet) {
     let body = {
       'pug':pug,
       'css':css,
       'json':json,
-      // 'snippet':"true"
+      'snippet': snippet
     }
     let params = new URLSearchParams()
     let result = this.http.post(this.url, body)

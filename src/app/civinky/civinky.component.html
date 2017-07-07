@@ -35,6 +35,10 @@
     <h3>JSON</h3>
     <p>JSON that will be passed to Pug for rendering.</p>
     <textarea [(ngModel)]="json"></textarea>
+    <h3>Snippet mode <input type="checkbox" [(ngModel)]="snippet"></h3>
+    <p>Choose whether to generate complete HTML, including !DOCTYPE, html head tags, etc., or just a <em>snippet</em> for insertion into another document.</p>
+
+
   </div>
 
   <div class="col-md-6">
@@ -43,7 +47,7 @@
     <iframe [srcdoc]="html"></iframe>
     <h3>HTML</h3>
     <p>Download the HTML for CiviMail here (or use the CiviCRM extension).</p>
-    <textarea [(ngModel)]="html" readonly></textarea>
+    <textarea [innerHTML]="html" readonly></textarea>
   </div>
 
 </div>
