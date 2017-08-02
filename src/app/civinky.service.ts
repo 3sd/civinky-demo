@@ -20,7 +20,6 @@ export class CivinkyService {
       'json':json,
       'snippet': snippet
     }
-    let params = new URLSearchParams()
     let result = this.http.post(this.url, body)
       .map(res => {return {url:res.url,html:res.text().trim()}})
     return result;
