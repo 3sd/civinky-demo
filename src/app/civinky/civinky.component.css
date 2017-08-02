@@ -9,3 +9,7 @@ textarea, iframe{
   border: 1px solid grey;
   font-family: monospace
 }
+
+iframe{
+  resize: both;
+}
