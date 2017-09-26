@@ -37,7 +37,7 @@ export class CivinkyComponent implements OnInit {
   }
 
   queryCivinky() {
-    this.civinky.query(this.pug, this.css, this.json, this.snippet).subscribe(
+    this.civinky.query(this.pug, this.css, JSON.parse(this.json), this.snippet).subscribe(
       result => {
         this.html = this.url = this.sanitizer.bypassSecurityTrustHtml(result.html)
         this.url = this.url = this.sanitizer.bypassSecurityTrustResourceUrl(result.url)
